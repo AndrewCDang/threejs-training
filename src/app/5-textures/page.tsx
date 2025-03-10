@@ -61,6 +61,7 @@ export default function Home() {
         materialTexture.minFilter = THREE.LinearFilter; // Linear filtering
         materialTexture.generateMipmaps = false; // Disable mipmaps (Bruno says disable it when using .minFilter = THREE.LinearFilter) because midmaps are not used when that filter is used
 
+        // minor change
         const materialNormalMap = loaderRef.current.load(
             "/Wood048_1K-JPG/Wood048_1K-JPG_NormalGL.jpg"
         );
